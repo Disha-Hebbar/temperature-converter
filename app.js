@@ -19,25 +19,16 @@ const calculateTemp = () => {
     let celcius =Math.round((fehr - 32)* 5 /9 + 32);
     return celcius;
         
-    }
-    
-    
-    
+    } 
+
     let result;
     
     if(valueTemp =='cel'){
-    
-    result =celToFah(numberTemp); 
-    document.getElementById( 'resultContainer').innerHTML =`= ${result} Fahrenheit`;                               
-    
-    }
-    else{
-    
-    result= fehToCel(numberTemp);
-    document.getElementById('resultContainer').innerHTML = `=  ${result} Celsius`;
-    
-    }
-    
-    
-    
+        result =celToFah(numberTemp); 
+        document.getElementById( 'resultContainer').innerHTML =`= ${result} Fahrenheit`;                               
+        }
+    else{ 
+        result= fehToCel(numberTemp);
+        document.getElementById('resultContainer').innerHTML = `=  ${result} Celsius`;
+        }
     }
